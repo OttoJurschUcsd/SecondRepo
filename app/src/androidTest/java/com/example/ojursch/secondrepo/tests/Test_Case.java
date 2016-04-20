@@ -24,6 +24,6 @@ public class Test_Case extends ActivityInstrumentationTestCase2<MainActivity> {
         two.setText((""+7).toCharArray(), 0, 1);
         mainActivity.onClick(mainActivity.findViewById(R.id.button));
         TextView out = (TextView) mainActivity.findViewById(R.id.textView);
-        assertEquals(Integer.parseInt(new String(out.getText().toString())), 13);
+        assertEquals(Integer.parseInt(new String(out.getText().toString())), -2);
     }
 }
