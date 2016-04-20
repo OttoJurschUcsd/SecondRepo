@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         EditText one = (EditText) findViewById(R.id.editText1);
         EditText two = (EditText) findViewById(R.id.editText2);
-        int sum = Integer.parseInt(one.getText().toString()) + Integer.parseInt(two.getText().toString());
+        int sum = Integer.parseInt(one.getText().toString()) - Integer.parseInt(two.getText().toString());
         TextView out = (TextView) findViewById(R.id.textView);
         out.setText(("" + sum).toCharArray(), 0, (""+sum).length());
     }
